@@ -1,5 +1,7 @@
 name: Auto Commit
 on:
+  schedule:
+    - cron: '0 0 * * *'  # This runs at 12:00 AM UTC each day
   push:
     branches:
       - main  # Adjust the branch name as needed
